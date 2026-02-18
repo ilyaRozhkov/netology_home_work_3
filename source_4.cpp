@@ -27,7 +27,9 @@ int main() {
     std::cout << "Введите целое число: ";
     std::cin >> num2;
 
-    if(num1 < -99 || num1 > 99 || num2 < -99 || num2 > 99)
+    if(num1 < -99 || num1 > 99 || num2 < -99 || num2 > 99){
+        return 0;
+    }
 
     absNum1 = abs(num1);
     absNum2 = abs(num2);
@@ -73,6 +75,6 @@ int main() {
         std::cout << resultSecond<< " больше чем " << resultFirst;
     }
     
-
+return 0;
 }
 
