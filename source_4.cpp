@@ -28,7 +28,8 @@ int main() {
     std::cin >> num2;
 
     if(num1 < -99 || num1 > 99 || num2 < -99 || num2 > 99){
-        return 0;
+        std::cout << "Число должно быть в диапазоне от -99 до 99\n";
+        return 1;
     }
 
     absNum1 = abs(num1);
@@ -70,11 +71,12 @@ int main() {
 
     if (num1 > num2) {
         std::cout << resultFirst << " больше чем " << resultSecond;
-    }
-    else {
+    }else if (num1 < num2) {
         std::cout << resultSecond<< " больше чем " << resultFirst;
     }
-    
+    else {
+        std::cout << resultFirst << " равно " << resultSecond;
+    }
 return 0;
 }
 
